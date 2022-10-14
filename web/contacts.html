@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html>
+<head><style>
+  body{
+
+    padding: 25px;
+    color: black;
+    font-size: 20px;
+  }
+  .dark-mode{
+  background-color: black;
+    color: white;
+
+  }
+  button{
+    cursor: pointer;
+  }
+</style>
+</head>
+<body>
+<button onclick="myFunction()">Toggle dark mode </button>
+<script>
+function myFunction(){
+  let element = document.body;
+  element.classList.toggle("dark-mode"); 
+}
+  </script>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>CONTACT </title>
+	<div class="col-lg-4 col-md-4 col-sm-12">
+            <div class="information">
+              <span><i class="fa fa-calendar-o"></i>&nbsp; Tuesday 19th of July 2022 </span>&nbsp;&nbsp;&nbsp;&nbsp;
+              <span><i class="fa fa-clock-o"></i>&nbsp;<span id="timer"></span></span>
+            </div>
+<script>
+    setInterval(function() {
+    var currentTime = new Date ( );    
+    var currentHours = currentTime.getHours ( );   
+    var currentMinutes = currentTime.getMinutes ( );   
+    var currentSeconds = currentTime.getSeconds ( );
+    currentMinutes = ( currentMinutes < 10 ? "0" : "" ) + currentMinutes;   
+    currentSeconds = ( currentSeconds < 10 ? "0" : "" ) + currentSeconds;    
+    var timeOfDay = ( currentHours < 12 ) ? "AM" : "PM";    
+    currentHours = ( currentHours > 12 ) ? currentHours - 12 : currentHours;    
+    currentHours = ( currentHours == 0 ) ? 12 : currentHours;    
+    var currentTimeString = currentHours + ":" + currentMinutes + ":" + currentSeconds + " " + timeOfDay;
+    document.getElementById("timer").innerHTML = currentTimeString;
+}, 1000);
+</script>
+	<center><h1><b>Ramchandra Bhatta</b></h1></center>
+	<center><h3> from mahalaxmi 9 lalitpur</h3></center>
+	<a href="https://www.facebook.com/ramchandra.bhatta.14606"> FB link</a>
+</head>
+<body bgcolor="pink">
+	 
+              
+
+</body>
+</html>

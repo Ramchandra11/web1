@@ -1,0 +1,33 @@
+.navbar{
+			height: 12px;
+			display: flex;
+			align-item: center;
+		}
+		.logo{
+			height: 20px;
+			cursor: pointer;
+		}
+		nav{
+			flex: 1;
+			text-align: right;
+		}
+		nav ul li{
+			list-style: none;
+			display: inline-block;
+			margin-left: 60px;
+		}
+		nav ul li a{
+			text-decoration: none;
+			text-color:#fff;
+			font-size: 13px;
+		}
+		<div class="navbar">
+<img src="img/bg.jpg" class="logo">
+
+<nav>
+	<ul>
+	<li><a href="">Home</a></li>
+	<li><a href="">resume</a></li>
+	<li><a href="">contact</a></li>
+</ul>
+</nav>
